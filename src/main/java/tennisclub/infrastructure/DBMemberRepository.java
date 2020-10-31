@@ -1,8 +1,8 @@
 package tennisclub.infrastructure;
 
-import tennisclub.domain.list.Member;
-import tennisclub.domain.list.MemberRepository;
-import tennisclub.domain.list.NoMemberExists;
+import tennisclub.domain.member.Member;
+import tennisclub.domain.member.MemberRepository;
+import tennisclub.domain.member.NoMemberExists;
 
 import java.sql.Connection;
 import java.sql.SQLException;

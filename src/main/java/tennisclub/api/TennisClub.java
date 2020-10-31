@@ -1,7 +1,7 @@
 package tennisclub.api;
 
-import tennisclub.domain.list.Member;
-import tennisclub.domain.list.MemberRepository;
+import tennisclub.domain.member.Member;
+import tennisclub.domain.member.MemberRepository;
 
 public class TennisClub {
     private static final String VERSION = "0.1";

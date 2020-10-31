@@ -1,4 +1,4 @@
-package tennisclub.domain.list;
+package tennisclub.domain.member;
 
 public class Member {
     private final int id;
