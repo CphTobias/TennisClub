@@ -7,16 +7,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("")
-public class Index extends BaseServlet {
+@WebServlet
+public class BaseServlet extends HttpServlet {
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp)
+    void render(String title, String content, HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-        render("TennisClub: Create a new list",
-                "/WEB-INF/index.jsp",
-                req, resp);
-
+        req.setAttribute("title", title);
+        req.setAttribute("content", content);
+        req.getRequestDispatcher("/WEB-INF/base.jsp").forward(req, resp);
     }
 }
