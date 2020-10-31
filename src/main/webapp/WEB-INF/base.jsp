@@ -8,14 +8,18 @@
           crossorigin="anonymous">
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css"/>
 </head>
-<body>
+<body class="d-flex flex-column h-100">
 <jsp:include page="/WEB-INF/navbar.jsp" flush="true"/>
 
-<main role="main" class="container">
+<main role="main" class="container flex-shrink-0">
     <jsp:include page="${requestScope.content}" flush="true"/>
-
 </main>
 
+<footer class="footer mt-auto py-3">
+    <div class="container">
+        <span class="text-muted">TennisClub (version ${requestScope.version})</span>
+    </div>
+</footer>
 
 </body>
 </html>
