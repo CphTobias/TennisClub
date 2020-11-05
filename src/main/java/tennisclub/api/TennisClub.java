@@ -2,6 +2,7 @@ package tennisclub.api;
 
 import tennisclub.domain.member.Member;
 import tennisclub.domain.member.MemberRepository;
+import tennisclub.domain.member.NoMemberExists;
 
 public class TennisClub {
     private static final String VERSION = "0.1";
@@ -17,5 +18,9 @@ public class TennisClub {
 
     public Member create(String name) {
         return memberRepo.create(name);
+    }
+
+    public Member findMemberList(int i) throws NoMemberExists {
+        return memberRepo.find(i);
     }
 }

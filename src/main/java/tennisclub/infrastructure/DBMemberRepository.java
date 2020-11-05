@@ -25,6 +25,7 @@ public class DBMemberRepository implements MemberRepository {
         try (Connection conn = db.connect()) {
             return null;
         } catch (SQLException throwables) {
+            throwables.printStackTrace();
             throw new NoMemberExists();
         }
 

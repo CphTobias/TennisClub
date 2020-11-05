@@ -1,5 +1,7 @@
 package tennisclub.web.pages;
 
+import tennisclub.domain.member.Member;
+import tennisclub.domain.member.NoMemberExists;
 import tennisclub.web.BaseServlet;
 
 import javax.servlet.ServletException;
@@ -15,11 +17,15 @@ public class Members extends BaseServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        render("TennisClub: Show Members",
-                "/WEB-INF/pages/members.jsp",
-                req, resp);
+        try {
+            Member member = api.findMemberList(1);
+            render("TennisClub: Show Members",
+                    "/WEB-INF/pages/members.jsp",
+                    req, resp);
+        } catch (NoMemberExists noMemberExists) {
+            resp.sendError(404, "Vi kunne ikke finde dit member");
+        }
 
-        req.getRequestDispatcher("/WEB-INF/base.jsp").forward(req, resp);
 
     }
 }
