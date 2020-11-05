@@ -1,4 +1,6 @@
-package tennisclub.web;
+package tennisclub.web.pages;
+
+import tennisclub.web.BaseServlet;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,7 +16,7 @@ public class Index extends BaseServlet {
             throws ServletException, IOException {
 
         render("TennisClub: Create a new list",
-                "/WEB-INF/index.jsp",
+                "/WEB-INF/pages/index.jsp",
                 req, resp);
 
     }

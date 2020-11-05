@@ -15,7 +15,7 @@ public class TennisClub {
         return VERSION;
     }
 
-    public Member create(String name){
+    public Member create(String name) {
         return memberRepo.create(name);
     }
 }
