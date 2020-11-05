@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.xml.crypto.Data;
 import java.io.IOException;
+import java.time.LocalDateTime;
 
 @WebServlet
 public class BaseServlet extends HttpServlet {
@@ -32,5 +33,10 @@ public class BaseServlet extends HttpServlet {
         req.setAttribute("title", title);
         req.setAttribute("content", content);
         req.getRequestDispatcher("/WEB-INF/base.jsp").forward(req, resp);
+    }
+
+    protected void log(HttpServletRequest req, String message) {
+        System.err.println("(" + LocalDateTime.now() + ") " +  this.getClass()
+                + ":  \"" + req.getRequestURI() + "\": " + message);
     }
 }

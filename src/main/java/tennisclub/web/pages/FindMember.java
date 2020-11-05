@@ -9,13 +9,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/login")
-public class Login extends BaseServlet {
+public class FindMember extends BaseServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         render("TennisClub: Login",
-                "/WEB-INF/pages/login.jsp",
+                "/WEB-INF/pages/findmember.jsp",
                 req, resp);
 
         req.getRequestDispatcher("/WEB-INF/base.jsp").forward(req, resp);

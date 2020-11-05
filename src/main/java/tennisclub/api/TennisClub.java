@@ -16,11 +16,11 @@ public class TennisClub {
         return VERSION;
     }
 
-    public Member create(String name) {
+    public Member createMember(String name) {
         return memberRepo.create(name);
     }
 
-    public Member findMemberList(int i) throws NoMemberExists {
+    public Member findMemberById(int i) throws NoMemberExists {
         return memberRepo.find(i);
     }
 }
