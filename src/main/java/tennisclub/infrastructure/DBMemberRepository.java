@@ -8,6 +8,8 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DBMemberRepository implements MemberRepository {
 
@@ -18,8 +20,22 @@ public class DBMemberRepository implements MemberRepository {
     }
 
     @Override
-    public Iterable<Member> findAll() {
-        return null;
+    public Iterable<Member> findAll() throws NoMemberExists {
+        try (Connection conn = db.connect()) {
+            String sql = "SELECT * FROM members";
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.executeQuery();
+
+            List<Member> members = new ArrayList<>();
+            ResultSet rs = ps.getGeneratedKeys();
+            while(rs.next()){
+                members.add(parseMember(rs));
+            }
+            return members;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            throw new NoMemberExists();
+        }
     }
 
     @Override
@@ -50,7 +66,7 @@ public class DBMemberRepository implements MemberRepository {
     }
 
     @Override
-    public Member create(String name) {
+    public Member create(String name) throws NoMemberExists {
         int newid;
         try (Connection conn = db.connect()) {
             String sql = "INSERT INTO members (name) VALUES (?)";
@@ -64,12 +80,9 @@ public class DBMemberRepository implements MemberRepository {
                 throw new RuntimeException("Unexpected error");
             }
         } catch (SQLException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
+            throw new NoMemberExists();
         }
-        try {
-            return find(newid);
-        } catch (NoMemberExists e) {
-            throw new RuntimeException(e);
-        }
+        return find(newid);
     }
 }

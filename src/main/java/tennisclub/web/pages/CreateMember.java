@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/members/*")
+@WebServlet("/createmember/*")
 public class CreateMember extends BaseServlet {
 
     @Override
@@ -40,8 +40,13 @@ public class CreateMember extends BaseServlet {
         if(username == null || username.equals("")){
             resp.sendError(400, "Expected a username or password");
         } else {
-            Member member = api.createMember(username);
-            resp.sendRedirect(req.getContextPath() + "/members/" + member.getId());
+            Member member = null;
+            try {
+                member = api.createMember(username);
+            } catch (NoMemberExists noMemberExists) {
+                noMemberExists.printStackTrace();
+            }
+            resp.sendRedirect(req.getContextPath() + "/createmember/" + member.getId());
         }
 
     }

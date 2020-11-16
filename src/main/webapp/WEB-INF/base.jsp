@@ -15,17 +15,18 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css"/>
 </head>
 
-<body class="d-flex flex-column h-100 text-center">
+<body class="d-flex flex-column h-100 text-center bg-light">
 
 <jsp:include page="/WEB-INF/includes/navbar.jsp" flush="true"/>
 
 <main role="main" class="container flex-shrink-0">
     <jsp:include page="${requestScope.content}" flush="true"/>
+    <jsp:include page="includes/modalpopup.jsp" flush="true"/>
 </main>
 
-<footer class="footer mt-auto py-3">
+<footer class="footer mt-auto py-4 fixed-bottom bg-dark">
     <div class="container">
-        <span class="text-muted">TennisClub (version ${requestScope.version})</span>
+        <span class="text-white">TennisClub (version ${requestScope.version})</span>
     </div>
 </footer>
 

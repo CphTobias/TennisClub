@@ -1,0 +1,11 @@
+
+q
+java:S2095I"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ä¾‹üûÿÿÿÿ8¼÷ÓÎÙ.
+l
+java:S2095"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÀÖĞ½8·Ò´¾Ü.
+l
+java:S2095-"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ÀÖĞ½8ÕàìÏÙ.
+b	java:S1124"FDefine and throw a dedicated exception instead of using a generic one.(Û¯”—8ßñ°ÁÜ.
+b	java:S112P"FDefine and throw a dedicated exception instead of using a generic one.(óÚü¸8ßñ°ÁÜ.
+j
+java:S3252I"HUse static access with "java.sql.Statement" for "RETURN_GENERATED_KEYS".(Ä¾‹üûÿÿÿÿ8ßñ°ÁÜ.
