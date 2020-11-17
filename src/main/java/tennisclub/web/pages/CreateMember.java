@@ -45,6 +45,8 @@ public class CreateMember extends BaseServlet {
                 member = api.createMember(username);
             } catch (NoMemberExists noMemberExists) {
                 noMemberExists.printStackTrace();
+                req.setAttribute("error", noMemberExists.getMessage());
+                render("Error:", "/WEB-INF/pages/errorpage.jsp", req, resp);
             }
             resp.sendRedirect(req.getContextPath() + "/createmember/" + member.getId());
         }
