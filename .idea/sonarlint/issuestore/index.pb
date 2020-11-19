@@ -41,3 +41,5 @@ P
 TennisClub.iml,3/5/358634f529ce84550ef9a90ab472290a714ce5bc
 _
 /src/main/webapp/WEB-INF/includes/modalpopup.jsp,3/c/3c913c6b6d36e49d717bfab6017217a609550572
+_
+/src/main/webapp/WEB-INF/includes/svgtesting.jsp,0/0/0018c98e58d6c59a0f012f878eeb6ef9f1b51301

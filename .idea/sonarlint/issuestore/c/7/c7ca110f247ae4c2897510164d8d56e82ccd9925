@@ -1,4 +1,4 @@
 
-S	java:S106"9Replace this use of System.out or System.err by a logger.(¡Ïì‘8Ùñ°ÁÜ.
-R
-java:S1128"2Remove this unused import 'javax.xml.crypto.Data'.(¦¿çˆıÿÿÿÿ8×†”Ú.
+T
+java:S1128"2Remove this unused import 'javax.xml.crypto.Data'.(¦¿çˆıÿÿÿÿ8×†”Ú.
+U	java:S106'"9Replace this use of System.out or System.err by a logger.(¡Ïì‘8Ùñ°ÁÜ.

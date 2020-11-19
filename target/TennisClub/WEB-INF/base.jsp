@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <title>${requestScope.title}</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
@@ -19,18 +22,24 @@
 
 <jsp:include page="/WEB-INF/includes/navbar.jsp" flush="true"/>
 
-<main role="main" class="container flex-shrink-0">
+<main role="main" class="container flex-shrink-0" id="main">
     <jsp:include page="${requestScope.content}" flush="true"/>
     <jsp:include page="includes/modalpopup.jsp" flush="true"/>
+    <div id="showContext" style="display: none">
+        <jsp:include page="includes/svgtesting.jsp" flush="true"/>
+    </div>
+    <button type="button" onclick="generatePDF()" class="btn btn-success">Generate PDF</button>
 </main>
 
-<footer class="footer mt-auto py-4 fixed-bottom bg-dark">
+<footer class="footer py-4 w-100">
     <div class="container">
         <span class="text-white">TennisClub (version ${requestScope.version})</span>
     </div>
 </footer>
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
+<script src="${pageContext.request.contextPath}/js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>

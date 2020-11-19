@@ -11,23 +11,28 @@
         </div>
     </div>
 
-    <div class="row">
-        <div class="col">
-            <div class="list-group">
-                <h2>Items in Database:</h2>
-                <c:forEach items="${requestScope.version}" var="item" varStatus="vs">
-                <div class="card" style="width: 18rem;">
+
+    <div class="list-group">
+        <h2>Items in Database:</h2>
+        <c:forEach items="${requestScope.version}" var="item" varStatus="vs">
+        <div class="row row-cols-1 row-cols-md-4">
+            <div class="col-mb-3">
+                <div class="card h-100 my-card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <button type="button" class="list-group-item list-group-item-action my-card" style="background-color: lightblue">
-                            ${item}
+                        <p class="card-text">With supporting text below as a natural lead-in to additional
+                            content.</p>
+                        <button type="button" class="list-group-item list-group-item-action"
+                                style="background-color: lightblue">
+                                ${item}
                         </button>
                     </div>
                 </div>
             </div>
-            </c:forEach>
         </div>
+    </div>
+    </c:forEach>
+    <div class="row">
         <c:forEach items="${requestScope.version}" var="item" varStatus="vs">
             <!-- Start of Modal -->
             <div class="modal fade" id="${vs.index}Modal" tabindex="-1" aria-labelledby="${vs.index}ModalLabel"
@@ -52,5 +57,4 @@
         </c:forEach>
         <!-- End of Modal -->
     </div>
-</div>
 </div>
