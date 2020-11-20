@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css"/>
 </head>
 
-<body class="d-flex flex-column h-100 text-center bg-light">
+<body class="d-flex flex-column h-100 bg-light">
 
 <jsp:include page="/WEB-INF/includes/navbar.jsp" flush="true"/>
 
@@ -31,9 +31,54 @@
     <button type="button" onclick="generatePDF()" class="btn btn-success">Generate PDF</button>
 </main>
 
-<footer class="footer py-4 w-100">
-    <div class="container">
-        <span class="text-white">TennisClub (version ${requestScope.version})</span>
+<div class="clearFloat"></div>
+
+
+<footer class="footer flex-shrink-0 text-white">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <h3 class="my-footerheader">Hvordan køber jeg?</h3>
+            <hr class="footer-hr">
+            <a class="my-footerheader" href="#">Ofte Stillede spørgsmål</a>
+            <br>
+            <a class="my-footerheader" href="#">Bliv kunde i Fog</a>
+            <br>
+        </div>
+        <div class="col-md-2">
+            <h3 class="my-footerheader">Aktuelt</h3>
+            <hr class="footer-hr">
+            <a class="my-footerheader" href="#">Tilbud</a>
+            <br>
+            <a class="my-footerheader" href="#">Facebook</a>
+            <br>
+            <a class="my-footerheader" href="#">Instagram</a>
+            <br>
+            <a class="my-footerheader" href="#">LinkedIn</a>
+            <br>
+        </div>
+        <div class="col-md-2">
+            <h3 class="my-footerheader">Om Fog</h3>
+            <hr class="footer-hr">
+            <a class="my-footerheader" href="#">Åbningstider</a>
+            <br>
+            <a class="my-footerheader" href="#">Om Fog</a>
+            <br>
+            <a class="my-footerheader" href="#">Cookie-politik</a>
+            <br>
+            <a class="my-footerheader" href="#">Persondata</a>
+        </div>
+        <div class="col-md-2">
+            <br>
+            <p class="fog-info">Johannes Fog</p>
+            <br>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row bottom-footer py-1">
+        <div class="col">
+            <p style="margin-top: 10px">Fog værksted (version ${requestScope.version})</p>
+        </div>
     </div>
 </footer>
 
