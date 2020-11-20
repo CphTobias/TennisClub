@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<div class="nav-container py-3 fixed-top" style="background-color: #0D2069">
+<div class="nav-container py-3" style="background-color: #0D2069">
     <nav class="navbar navbar-expand-md navbar-dark">
 
         <a href="#"><img class="foglogoheader" src="${pageContext.request.contextPath}/images/fogheaderlogo.png" alt="FogLogo"/></a>

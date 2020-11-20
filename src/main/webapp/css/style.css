@@ -1,43 +1,15 @@
+@import "footer.css";
+@import "navbar.css";
+@import "signin.css";
+
 main {
-    padding-top: 8rem;
+    padding-top: 2rem;
     margin: 40px;
 }
 
 h1, h2, h3, h4, h5 {
     font-family: 'Big Shoulders Display', sans-serif;
     color: #1a2d73
-}
-
-.my-footerheader {
-    color: white !important;
-}
-
-.foglogoheader {
-    margin-right: 20px;
-}
-
-.nav-container {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.my-navlinks:hover {
-    color: #50a8fd !important;
-}
-
-.my-navlinks {
-    font-family: 'Big Shoulders Display', sans-serif;
-    color: #ffffff !important;
-    font-size: 25px;
-    margin: 10px;
-}
-
-nav {
-    width: 80%;
-    margin: auto;
-    height: auto;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
 }
 
 .my-card {
@@ -47,69 +19,6 @@ nav {
 .my-card:hover {
     transition: all .5s;
     transform: scale(1.1);
-}
-
-[class*="col-md-3"] {
-    position: static;
-}
-
-
-footer {
-    width: 100%;
-    margin: auto;
-    height: auto;
-    padding-top: 5px;
-    text-align: center;
-    background-color: #003d76;
-}
-
-.footer-hr {
-    background-color: #50a8fd;
-}
-
-.fog-info {
-    color: white !important;
-    font-size: 24px;
-}
-
-.bottom-footer {
-    margin-top: 10px;
-    background-color: #0757a2;
-}
-
-.form-signin {
-    width: 100%;
-    max-width: 330px;
-    padding: 15px;
-    margin: auto;
-}
-
-.form-signin .checkbox {
-    font-weight: 400;
-}
-
-.form-signin .form-control {
-    position: relative;
-    box-sizing: border-box;
-    height: auto;
-    padding: 10px;
-    font-size: 16px;
-}
-
-.form-signin .form-control:focus {
-    z-index: 2;
-}
-
-.form-signin input[type="email"] {
-    margin-bottom: -1px;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.form-signin input[type="password"] {
-    margin-bottom: 10px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
 }
 
 

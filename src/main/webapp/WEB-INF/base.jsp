@@ -25,48 +25,40 @@
 <main role="main" class="container flex-shrink-0" id="main">
     <jsp:include page="${requestScope.content}" flush="true"/>
     <jsp:include page="includes/modalpopup.jsp" flush="true"/>
-    <div id="showContext" style="display: none">
-        <jsp:include page="includes/svgtesting.jsp" flush="true"/>
-    </div>
+    <jsp:include page="includes/svgtesting.jsp" flush="true"/>
     <button type="button" onclick="generatePDF()" class="btn btn-success">Generate PDF</button>
 </main>
-
-<div class="clearFloat"></div>
-
 
 <footer class="footer flex-shrink-0 text-white">
     <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-2">
             <h3 class="my-footerheader">Hvordan køber jeg?</h3>
-            <hr class="footer-hr">
-            <a class="my-footerheader" href="#">Ofte Stillede spørgsmål</a>
+            <a class="my-footerlinks" href="#">Ofte Stillede spørgsmål</a>
             <br>
-            <a class="my-footerheader" href="#">Bliv kunde i Fog</a>
+            <a class="my-footerlinks" href="#">Bliv kunde i Fog</a>
             <br>
         </div>
         <div class="col-md-2">
             <h3 class="my-footerheader">Aktuelt</h3>
-            <hr class="footer-hr">
-            <a class="my-footerheader" href="#">Tilbud</a>
+            <a class="my-footerlinks" href="#">Tilbud</a>
             <br>
-            <a class="my-footerheader" href="#">Facebook</a>
+            <a class="my-footerlinks" href="#">Facebook</a>
             <br>
-            <a class="my-footerheader" href="#">Instagram</a>
+            <a class="my-footerlinks" href="#">Instagram</a>
             <br>
-            <a class="my-footerheader" href="#">LinkedIn</a>
+            <a class="my-footerlinks" href="#">LinkedIn</a>
             <br>
         </div>
         <div class="col-md-2">
             <h3 class="my-footerheader">Om Fog</h3>
-            <hr class="footer-hr">
-            <a class="my-footerheader" href="#">Åbningstider</a>
+            <a class="my-footerlinks" href="#">Åbningstider</a>
             <br>
-            <a class="my-footerheader" href="#">Om Fog</a>
+            <a class="my-footerlinks" href="#">Om Fog</a>
             <br>
-            <a class="my-footerheader" href="#">Cookie-politik</a>
+            <a class="my-footerlinks" href="#">Cookie-politik</a>
             <br>
-            <a class="my-footerheader" href="#">Persondata</a>
+            <a class="my-footerlinks" href="#">Persondata</a>
         </div>
         <div class="col-md-2">
             <br>
@@ -77,7 +69,9 @@
     </div>
     <div class="row bottom-footer py-1">
         <div class="col">
-            <p style="margin-top: 10px">Fog værksted (version ${requestScope.version})</p>
+            <p style="margin-top: 10px">
+                Johannes Fog A/S - Firskovvej 20 - 2800 Lyngby - CVR-nr. 16314439
+            </p>
         </div>
     </div>
 </footer>

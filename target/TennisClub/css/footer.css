@@ -1,0 +1,36 @@
+.my-footerheader {
+    color: white !important;
+    border-bottom: 2px solid #50a8fd;
+    padding-bottom: 3px;
+}
+
+.my-footerlinks {
+    color: white !important;
+}
+
+.my-footerlinks:hover {
+    color: #50a8fd !important;
+}
+
+footer {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    padding-top: 8px;
+    text-align: center;
+    background-color: #003d76;
+}
+
+.footer-hr {
+    background-color: #50a8fd;
+}
+
+.bottom-footer {
+    margin-top: 10px;
+    background-color: #0757a2;
+}
+
+.fog-info {
+    color: white !important;
+    font-size: 24px;
+}
