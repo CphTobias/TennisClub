@@ -29,56 +29,11 @@
     <button type="button" onclick="generatePDF()" class="btn btn-success">Generate PDF</button>
 </main>
 
-<footer class="footer flex-shrink-0 text-white">
-    <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-2">
-            <h3 class="my-footerheader">Hvordan køber jeg?</h3>
-            <a class="my-footerlinks" href="#">Ofte Stillede spørgsmål</a>
-            <br>
-            <a class="my-footerlinks" href="#">Bliv kunde i Fog</a>
-            <br>
-        </div>
-        <div class="col-md-2">
-            <h3 class="my-footerheader">Aktuelt</h3>
-            <a class="my-footerlinks" href="#">Tilbud</a>
-            <br>
-            <a class="my-footerlinks" href="#">Facebook</a>
-            <br>
-            <a class="my-footerlinks" href="#">Instagram</a>
-            <br>
-            <a class="my-footerlinks" href="#">LinkedIn</a>
-            <br>
-        </div>
-        <div class="col-md-2">
-            <h3 class="my-footerheader">Om Fog</h3>
-            <a class="my-footerlinks" href="#">Åbningstider</a>
-            <br>
-            <a class="my-footerlinks" href="#">Om Fog</a>
-            <br>
-            <a class="my-footerlinks" href="#">Cookie-politik</a>
-            <br>
-            <a class="my-footerlinks" href="#">Persondata</a>
-        </div>
-        <div class="col-md-2">
-            <br>
-            <p class="fog-info">Johannes Fog</p>
-            <br>
-        </div>
-        <div class="col-md-2"></div>
-    </div>
-    <div class="row bottom-footer py-1">
-        <div class="col">
-            <p style="margin-top: 10px">
-                Johannes Fog A/S - Firskovvej 20 - 2800 Lyngby - CVR-nr. 16314439
-            </p>
-        </div>
-    </div>
-</footer>
+
+<!-- Footer -->
+<jsp:include page="includes/footer.jsp" flush="true"/>
 
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.0.272/jspdf.debug.js"></script>
-<script src="${pageContext.request.contextPath}/js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
