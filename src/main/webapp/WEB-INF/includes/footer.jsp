@@ -83,9 +83,9 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-12">
-                            <br>
-                            <p class="fog-info">Johannes Fog</p>
-                            <br>
+                            <p class="fog-info" style="padding-top: 20px">Johannes Fog</p>
+                            <p class="fog-info">45 87 10 01</p>
+                            <p class="fog-info">Send e-mail</p>
                         </div>
                     </div>
                 </div>

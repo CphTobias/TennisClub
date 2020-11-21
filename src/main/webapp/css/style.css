@@ -1,6 +1,7 @@
 @import "footer.css";
 @import "navbar.css";
 @import "signin.css";
+@import "cookies.css";
 
 main {
     padding-top: 2rem;

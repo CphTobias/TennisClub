@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col">
+        <div class="col" style="text-align: center">
 
             <h1 style="text-align: center"><strong>Bestillings info</strong></h1>
             <p>Dette er starten på din pdf fil</p>
