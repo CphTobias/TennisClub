@@ -92,17 +92,17 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" style="margin-top: 30px">
         <div class="row">
             <div class="bottom-footer d-lg-flex h-auto w-100">
                 <div class="col-lg-8 col-md-12">
-                    <p style="margin-top: 10px">
+                    <p>
                         Johannes Fog A/S - Firskovvej 20 - 2800 Lyngby - CVR-nr. 16314439
                     </p>
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-3 col-md-12">
-                    <p style="margin-top: 10px">
+                    <p>
                         Fog version (${requestScope.version})
                     </p>
                 </div>
