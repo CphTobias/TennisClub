@@ -4,7 +4,6 @@
         <div class="row">
             <div class="col">
                 <h1 class="my-footerheader">Fog cookie policy</h1>
-                <hr>
             </div>
         </div>
 
