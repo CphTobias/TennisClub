@@ -15,7 +15,12 @@
     bottom: 0;
 }
 
-.cookie-btn {
+.cookie-btn-accept {
+    padding: 12px 48px;
+    margin-bottom: 16px;
+}
+
+.cookie-btn-decline {
     padding: 12px 48px;
     margin-bottom: 16px;
 }

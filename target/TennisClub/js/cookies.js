@@ -1,5 +1,5 @@
 const cookieContainer = document.querySelector(".cookie-container");
-const cookieButton = document.querySelector(".cookie-btn");
+const cookieButton = document.querySelector(".cookie-btn-accept");
 
 //When they click the cookieButton
 cookieButton.addEventListener("click", () => {

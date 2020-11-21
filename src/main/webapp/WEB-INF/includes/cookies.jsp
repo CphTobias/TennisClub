@@ -17,7 +17,8 @@
                     politik</a> og accepteret det.
                 </p>
 
-                <button class="cookie-btn btn btn-primary">Accepter</button>
+                <button class="cookie-btn-accept btn btn-primary">Accepter</button>
+
             </div>
         </div>
     </div>
