@@ -45,3 +45,17 @@ _
 /src/main/webapp/WEB-INF/includes/svgtesting.jsp,0/0/0018c98e58d6c59a0f012f878eeb6ef9f1b51301
 L
 src/main/webapp/js/script.js,a/4/a48403258fe4818219eb066d53485a1f30081afd
+N
+src/main/webapp/css/navbar.css,1/a/1a85d740048114131414bcf7d21bb901ddb49d0e
+N
+src/main/webapp/css/signin.css,1/c/1c05a637212ec188b851d37aba775986e0159b5b
+[
++src/main/webapp/WEB-INF/includes/footer.jsp,9/7/971570857fb512bddad5dd7a129f962b084a83a3
+N
+src/main/webapp/css/footer.css,d/5/d5b8579a9db557a92c03195572fbbd21a95c372b
+O
+src/main/webapp/css/cookies.css,a/c/ac9b879c10481212e45c486bc940cac1433007b7
+M
+src/main/webapp/js/cookies.js,1/5/150c9467673fa156e072e6703fa6016cc32e4bd1
+\
+,src/main/webapp/WEB-INF/includes/cookies.jsp,6/1/618c83aedec05933476eebad52aaec10680028e0

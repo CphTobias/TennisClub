@@ -16,7 +16,7 @@
             </ul>
 
             <!-- Tab panes -->
-            <div class="tab-content">
+            <div class="tab-content" style="height: 60px; overflow-y: scroll;">
                 <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
                     <div class="form-group" style="padding-top: 10px">
                         <label for="username">Username</label>

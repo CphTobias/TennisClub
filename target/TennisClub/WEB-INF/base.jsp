@@ -20,20 +20,24 @@
 
 <body class="d-flex flex-column h-100 bg-light">
 
-<jsp:include page="/WEB-INF/includes/navbar.jsp" flush="true"/>
+<div class="cookies">
 
-<main role="main" class="container flex-shrink-0" id="main">
-    <jsp:include page="${requestScope.content}" flush="true"/>
-    <jsp:include page="includes/modalpopup.jsp" flush="true"/>
-    <jsp:include page="includes/svgtesting.jsp" flush="true"/>
-    <button type="button" onclick="generatePDF()" class="btn btn-success">Generate PDF</button>
-</main>
+    <jsp:include page="/WEB-INF/includes/navbar.jsp" flush="true"/>
+
+    <main role="main" class="container flex-shrink-0" id="main">
+        <jsp:include page="${requestScope.content}" flush="true"/>
+        <jsp:include page="includes/modalpopup.jsp" flush="true"/>
+        <jsp:include page="includes/svgtesting.jsp" flush="true"/>
+        <button type="button" onclick="generatePDF()" class="btn btn-success">Generate PDF</button>
+    </main>
+
+    <!-- Footer -->
+    <jsp:include page="includes/footer.jsp" flush="true"/>
+
+</div>
 
 <!-- Cookies -->
 <jsp:include page="includes/cookies.jsp" flush="true"/>
-
-<!-- Footer -->
-<jsp:include page="includes/footer.jsp" flush="true"/>
 
 <script src="${pageContext.request.contextPath}/js/cookies.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -42,6 +46,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/d558e38d6e.js" crossorigin="anonymous"></script>
 
 </body>
 

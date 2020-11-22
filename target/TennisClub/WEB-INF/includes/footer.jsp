@@ -56,7 +56,8 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-12">
-                            <a href="#three" class="h3 my-footerheader my-footerdropdown nav-link py-0 d-block d-lg-none d-xl-none"
+                            <a href="#three"
+                               class="h3 my-footerheader my-footerdropdown nav-link py-0 d-block d-lg-none d-xl-none"
                                data-toggle="collapse" data-parent="#accordion">
                                 Om Fog
                             </a>
@@ -83,9 +84,15 @@
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-12">
-                            <p class="fog-info" style="padding-top: 20px">Johannes Fog</p>
-                            <p class="fog-info">45 87 10 01</p>
-                            <p class="fog-info">Send e-mail</p>
+                            <p class="fog-info" style="padding-top: 20px"><i class="fas fa-users"
+                                                                             style="border: 1px solid white; border-radius: 40px; padding: 7px; margin-right: 10px"></i>
+                                Johannes Fog</p>
+                            <p class="fog-info"><i class="fas fa-phone-alt"
+                                                   style="border: 1px solid white; border-radius: 40px; padding: 7px; margin-right: 10px"></i>
+                                45 87 10 01</p>
+                            <p class="fog-info"><i class="far fa-envelope"
+                                                   style="border: 1px solid white; border-radius: 40px; padding: 7px; margin-right: 10px"></i>
+                                Send e-mail</p>
                         </div>
                     </div>
                 </div>

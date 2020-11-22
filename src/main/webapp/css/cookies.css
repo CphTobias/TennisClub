@@ -10,6 +10,12 @@
     transition: 400ms;
 }
 
+.cookies.active {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    z-index: -999999;
+    transition: 400ms;
+}
+
 .cookie-container.active {
     z-index: 999999;
     bottom: 0;
